@@ -1,11 +1,20 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Alert} from 'react-native';
 import Button from '../component/button/Button';
+import Header from '../component/header/Header';
 import ItemGroup from '../component/ItemGroup';
+
+const onBack = () => {
+  Alert.alert('Back');
+};
+const onClose = () => {
+  Alert.alert('Close');
+};
 
 const Home = () => {
   return (
     <View style={{backgroundColor: '#EEEEEE'}}>
+      <Header onBack={onBack} onClose={onClose} />
       <Text>Test Component</Text>
       <ItemGroup />
       <Button
