@@ -4,7 +4,7 @@ const ItemGroup = () => {
   return (
     <View style={style.container}>
       <Text style={style.circle}>1</Text>
-      <Text style={style.text}>Hello From Vinod</Text>
+      <Text style={style.text}>This is component</Text>
     </View>
   );
 };
