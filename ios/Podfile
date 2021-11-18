@@ -12,6 +12,14 @@ target 'UIComponent' do
     :hermes_enabled => false
   )
 
+  pod 'TouchID', :path => '../node_modules/react-native-touch-id'
+
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+  pod 'YouTubeSdk', :path => '../node_modules/react-native-youtube-sdk'
+
+  pod 'react-native-orientation', :path => '../node_modules/react-native-orientation'
+
   target 'UIComponentTests' do
     inherit! :complete
     # Pods for testing
